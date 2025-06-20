@@ -1,0 +1,56 @@
+[
+  {
+    "id": "abertura-mercado-15-jun",
+    "title": "Ibovespa abre em leve alta de olho em dados externos",
+    "summary": "Mercados globais reagem positivamente a indicadores de inflação na Europa, influenciando o pregão local.",
+    "image": "https://placehold.co/600x400/6366F1/FFFFFF?text=Abertura+Mercado",
+    "category": "Giro de Mercado",
+    "date": "15 de Junho de 2025",
+    "content": "<p>O principal índice da bolsa brasileira iniciou o dia com otimismo moderado...</p>"
+  },
+  {
+    "id": "fechamento-mercado-14-jun",
+    "title": "Bolsa fecha em queda com setor de varejo pressionado",
+    "summary": "Um dia de oscilações termina com o principal índice da bolsa brasileira em território negativo, impactado por preocupações com o consumo.",
+    "image": "https://placehold.co/600x400/6B7280/FFFFFF?text=Fechamento+Mercado",
+    "category": "Giro de Mercado",
+    "date": "14 de Junho de 2025",
+    "content": "<p>Após um dia volátil, o Ibovespa não conseguiu sustentar os ganhos e fechou em baixa...</p>"
+  },
+  {
+    "id": "radar-semanal-jun-w3",
+    "title": "Agenda da Semana: Foco na decisão de juros do Copom",
+    "summary": "Confira os principais eventos e indicadores que devem movimentar os mercados nesta semana, com destaque para a reunião do Comitê de Política Monetária.",
+    "image": "https://placehold.co/600x300/F59E0B/FFFFFF?text=Radar+Semanal",
+    "category": "Radar Semanal",
+    "date": "15 de Junho de 2025",
+    "content": "<p>A semana promete ser agitada para os investidores, com a atenção toda voltada para a decisão de juros no Brasil...</p>"
+  },
+  {
+    "id": "tarifas-trump-historia-economica",
+    "title": "O que os economistas da nossa história pensam sobre a retrógrada ideia de Trump de impor tarifas?",
+    "summary": "Uma análise sobre a controversa ideia de imposição de tarifas e suas implicações históricas e atuais na economia.",
+    "image": "https://placehold.co/600x400/EC4899/FFFFFF?text=Tarifas+Trump",
+    "category": "Análise Econômica",
+    "date": "14 de Junho de 2025",
+    "content": "<p>Olá, Futuristas da economia!!!</p><p>Hoje, vamos mergulhar num tema que adora voltar à tona, como aquela tia que ressurge nas festas de fim de ano com as mesmas histórias: as tarifas de importação. Parece simples, né? Um país quer proteger sua indústria, então tasca uma taxa extra nos produtos que vêm de fora. Mas, como já diria o guru dos investimentos, Fabio Almeida, \"às vezes, ser um Einstein mais atrapalha do que ajuda na hora de investir\" - e na economia, meus caros, o óbvio nem sempre é tão óbvio assim!</p><p>Por séculos, teve gente que acreditou que a riqueza de uma nação era medida pelo ouro guardado, tipo um Tio Patinhas gigante. A ideia era vender muito e comprar pouco. Mas aí vieram os gênios para nos dar um chacoalhão. Adam Smith, o pai da economia moderna, argumentava que a riqueza de um país está nas \"mercadorias consumíveis, anualmente reproduzidas pelo trabalho do país\" e que a \"liberdade perfeita\" é o melhor caminho para isso. Ele era tipo o embaixador do livre comércio! David Ricardo, outro peso-pesado, reforçou a ideia, defendendo que \"um intercâmbio livre e sem restrições produziria vantagens gerais e locais\".</p><p>Mas a história gosta de se repetir, e eis que surge o \"tarifaço de Trump\"! No seu segundo mandato, sob o lema America First 2.0, Donald Trump apostou alto em tarifas elevadas, visando reduzir o déficit comercial e proteger a indústria nacional. O economista Stephen Miran, presidente do Conselho de Assessores Econômicos, chegou a publicar um guia defendendo que as tarifas seriam implementadas \"interconectada[s] com preocupações de segurança nacional\". A visão é ampla, buscando reequilibrar o comércio e re-industrializar o país.</p><p>Só que a teoria econômica já alertava sobre os perigos dessas manobras. Jevons, por exemplo, já avisava que \"já passou o tempo em que algum economista daria a mais leve aprovação ao seu emprego [das taxas alfandegárias] para manipular o comércio ou para interferir na tendência natural da troca em aumentar a utilidade\". Ou seja, tentar forçar a barra do mercado é coisa do passado!</p><p>No final das contas, as tarifas podem parecer uma solução rápida, mas na maioria das vezes, elas só atrapalham o fluxo natural do comércio, encarecem os produtos e, acreditem, diminuem a riqueza real do próprio país. É um tiro no pé! E para quem ainda teima em ir contra a corrente e as evidências históricas, Marx tinha um bom conselho: \"Segue o teu curso e deixa a gentalha falar!\". O mercado, com suas leis de oferta e procura, tem seu próprio jeito de seguir em frente, e tentar forçá-lo com barreiras raramente termina bem para todos.</p>"
+  },
+  {
+    "id": "entrevista-economista-y",
+    "title": "\"A Próxima Década Será de Grandes Transformações\", diz Economista Y",
+    "summary": "Conversamos com [Nome do Especialista] sobre as perspectivas para a economia global, o papel das novas tecnologias e os riscos no horizonte.",
+    "image": "https://placehold.co/600x400/8B5CF6/FFFFFF?text=Entrevista",
+    "category": "O Olhar do Especialista",
+    "date": "10 de Junho de 2025",
+    "content": "<p>Neste artigo, exploramos os pontos de vista do renomado Economista Y sobre o futuro da economia...</p>"
+  },
+  {
+    "id": "desglobalizacao-seletiva",
+    "title": "Desglobalização Seletiva: Novos Blocos Econômicos e o Comércio Mundial",
+    "summary": "Analisamos como as recentes mudanças geopolíticas estão reconfigurando as cadeias de suprimentos e o comércio internacional.",
+    "image": "https://placehold.co/600x400/10B981/FFFFFF?text=Macro+Tendências",
+    "category": "Radar de Macro Tendências",
+    "date": "5 de Junho de 2025",
+    "content": "<p>A era da globalização como a conhecemos pode estar a chegar ao fim, dando lugar a um fenômeno de desglobalização seletiva...</p>"
+  }
+]
