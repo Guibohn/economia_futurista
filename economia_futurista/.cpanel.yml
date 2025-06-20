@@ -1,0 +1,20 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/economia13d08a61/public_html/
+
+    # Copia os arquivos HTML e JSON DA PASTA economia_futurista/
+    - /bin/cp economia_futurista/articles.json $DEPLOYPATH
+    - /bin/cp economia_futurista/artigo.html $DEPLOYPATH
+    - /bin/cp economia_futurista/artigos.html $DEPLOYPATH
+    - /bin/cp economia_futurista/contato.html $DEPLOYPATH
+    - /bin/cp economia_futurista/index.html $DEPLOYPATH
+    - /bin/cp economia_futurista/sobre.html $DEPLOYPATH
+
+    # Copia as pastas css e js (que estão dentro de economia_futurista/) recursivamente
+    - /bin/cp -R economia_futurista/css $DEPLOYPATH
+    - /bin/cp -R economia_futurista/js $DEPLOYPATH
+
+    # Limpeza (opcional)
+    - /bin/rm -rf $DEPLOYPATH/.git
+    - /bin/rm -rf $DEPLOYPATH/.cpanel.yml
