@@ -2,6 +2,18 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/economia13d08a61/public_html/
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/rm -rf $DEPLOYPATH/.git # Remove a pasta .git copiada, se houver
-    - /bin/rm -rf $DEPLOYPATH/.cpanel.yml # Remove o próprio .cpanel.yml copiado, se não quiser ele na produção
+    # Copia os arquivos HTML e JSON da raiz do repositório
+    - /bin/cp articles.json $DEPLOYPATH
+    - /bin/cp artigo.html $DEPLOYPATH
+    - /bin/cp artigos.html $DEPLOYPATH
+    - /bin/cp contato.html $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp sobre.html $DEPLOYPATH
+    
+    # Copia as pastas css e js recursivamente para o DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    
+    # Limpeza (opcional, para garantir que .git e .cpanel.yml não vão para produção)
+    - /bin/rm -rf $DEPLOYPATH/.git
+    - /bin/rm -rf $DEPLOYPATH/.cpanel.yml
