@@ -1,7 +1,6 @@
-
+---
 deployment:
   tasks:
     - export DEPLOYPATH=/home/economia13d08a61/public_html/
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/rm -rf $DEPLOYPATH/.git
-    - /bin/rm -rf $DEPLOYPATH/.cpanel.yml
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
