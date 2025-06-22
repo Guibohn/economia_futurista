@@ -1,5 +1,4 @@
-<style>
-    body { font-family: 'Inter', sans-serif; }
+    .body { font-family: 'Inter', sans-serif; }
     .logo-text a { font-size: 1.875rem; font-weight: 700; background: linear-gradient(to right, #4F46E5, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
     .hero-section { background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); }
     .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
@@ -14,4 +13,3 @@
     .nav-active { color: #4F46E5; font-weight: 600; }
     .header-logo-svg { height: 2.5rem; width: 2.5rem; margin-right: 0.75rem; color: #4F46E5; }
     .prose p { margin-bottom: 1.25rem; line-height: 1.7; }
-</style>
