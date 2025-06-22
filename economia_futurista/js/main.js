@@ -1,4 +1,4 @@
-<script>
+
     const articlesDB = './articles.json';
 
     function createArticleCard(article) {
@@ -105,4 +105,3 @@
             articleContent.innerHTML = `<p class="text-center text-red-500">Ocorreu um erro ao carregar o artigo. Verifique o console.</p>`;
         }
     }
-</script>

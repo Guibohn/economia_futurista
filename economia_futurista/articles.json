@@ -1,4 +1,3 @@
-<pre>
 [
   { "id": "post-13", "title": "Artigo Novo 13", "summary": "Resumo do artigo 13...", "image": "https://placehold.co/600x400/FFC107/FFFFFF?text=Artigo+13", "category": "Giro de Mercado", "date": "22 de Junho de 2025", "content": "<p>Conteúdo completo do artigo 13.</p>" },
   { "id": "post-12", "title": "Artigo Novo 12", "summary": "Resumo do artigo 12...", "image": "https://placehold.co/600x400/FF9800/FFFFFF?text=Artigo+12", "category": "Giro de Mercado", "date": "21 de Junho de 2025", "content": "<p>Conteúdo completo do artigo 12.</p>" },
@@ -15,4 +14,3 @@
   { "id": "historia-keynes", "title": "O que Keynes diria sobre os estímulos governamentais de hoje?", "summary": "Uma análise de como as teorias de John Maynard Keynes se aplicam aos pacotes de estímulo econômico pós-pandemia.", "image": "https://placehold.co/600x400/8B5CF6/FFFFFF?text=Análise+de+Economistas", "category": "Análise de Economistas", "date": "11 de Junho de 2025", "content": "<p>A teoria Keynesiana sobre a intervenção do estado em tempos de crise nunca foi tão relevante...</p>" },
   { "id": "tarifas-trump-historia-economica", "title": "O que os economistas da nossa história pensam sobre a retrógrada ideia de Trump de impor tarifas?", "summary": "Uma análise sobre a controversa ideia de imposição de tarifas e suas implicações históricas e atuais na economia.", "image": "https://placehold.co/600x400/EC4899/FFFFFF?text=Tarifas+Trump", "category": "Análise de Economistas", "date": "10 de Junho de 2025", "content": "<p>Olá, Futuristas da economia!!! Hoje, vamos mergulhar num tema que adora voltar à tona...</p>" }
 ]
-</pre>
