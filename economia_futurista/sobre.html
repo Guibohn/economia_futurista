@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - Economia Futurista</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7890018260804293" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.tailwindcss.com"></script> 
-    
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800 font-['Inter',_sans-serif]"> <header class="bg-white shadow-md sticky top-0 z-50">
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-             <a href="index.html" class="flex items-center no-underline text-gray-800"> <svg class="header-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <p class="logo-text text-xl font-bold ml-2">Economia Futurista</p> </a>
+             <a href="index.html" class="flex items-center text-decoration-none"><svg class="header-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><h1 class="logo-text">Economia Futurista</h1></a>
             <nav class="space-x-4 md:space-x-6 text-sm md:text-base">
                 <a href="index.html" class="text-gray-600 hover:text-indigo-600">Home</a>
                 <a href="artigos.html" class="text-gray-600 hover:text-indigo-600">Artigos</a>
@@ -24,23 +21,28 @@
             </nav>
         </div>
     </header>
+    <div class="bg-gray-200 py-3">...</div>
 
     <main class="container mx-auto px-6 py-12">
         <section class="bg-white p-8 md:p-12 rounded-lg shadow-lg max-w-4xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-700">Sobre Nós</h1>
-            
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-700">Sobre Nós</h2>
             <div class="flex justify-center mb-6">
                  <svg class="h-20 w-20 text-indigo-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 12L12 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 14.5L17 16L17 19L20 17.5L20 14.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 14.5L7 16L7 19L4 17.5L4 14.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Economia Futurista</h2> <p class="text-gray-600 leading-relaxed mb-4 text-center max-w-2xl mx-auto">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Economia Futurista</h3>
+            <p class="text-gray-600 leading-relaxed mb-4 text-center max-w-2xl mx-auto">
                 Bem-vindo ao Economia Futurista, seu portal de insights e análises sobre as transformações que moldarão o cenário econômico global. A nossa missão é fornecer conteúdo relevante, atualizado e instigante que o ajude a navegar pelas complexidades do futuro financeiro. Junte-se a nós nesta jornada de descoberta!
             </p>
         </section>
     </main>
 
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-16">...</footer>
+    <section id="newsletter" class="bg-indigo-700 text-white py-16 mt-12">...</section>
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center">...</footer>
     <div id="cookie-banner" class="hidden ...">...</div>
-    <script>...</script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => handleNewsletterSubscription());
+        // ... (resto do script)
+    </script>
 </body>
 </html>

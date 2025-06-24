@@ -1,6 +1,4 @@
-   // CORREÇÃO: Adicionamos um parâmetro único à URL para evitar problemas de cache.
-    // O `?v=${new Date().getTime()}` força o navegador a sempre descarregar a versão mais recente do ficheiro.
-    const articlesDB = `./articles.json?v=${new Date().getTime()}`;
+   const articlesDB = './articles.json';
 
     function createArticleCard(article) {
         const categoryColors = {
@@ -40,7 +38,7 @@
         } catch (error) {
              console.error('Erro ao carregar artigos da página inicial:', error);
              const container = document.getElementById('latest-articles-container');
-             if(container) container.innerHTML = '<p class="text-center text-red-500 col-span-full">Ocorreu um erro ao carregar os artigos. Verifique o console do navegador (F12) para mais detalhes.</p>';
+             if(container) container.innerHTML = '<p class="text-center text-red-500 col-span-full">Ocorreu um erro ao carregar os artigos.</p>';
         }
     }
 
@@ -58,7 +56,7 @@
         } catch (error) {
             console.error('Erro ao carregar a lista de artigos:', error);
             const container = document.getElementById('all-articles-container');
-            if (container) container.innerHTML = '<p class="text-center text-red-500 col-span-3">Ocorreu um erro ao carregar os artigos. Verifique o console do navegador (F12) para mais detalhes.</p>';
+            if (container) container.innerHTML = '<p class="text-center text-red-500 col-span-3">Ocorreu um erro ao carregar os artigos.</p>';
         }
     }
 
@@ -96,7 +94,7 @@
                     <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7890018260804293" data-ad-slot="1234567890"></ins>
                     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                 </div>
-                
+
                 <div class="prose max-w-none text-gray-700 leading-relaxed">
                     ${article.content}
                 </div>
@@ -110,4 +108,29 @@
             console.error('Erro ao carregar o artigo:', error);
             articleContent.innerHTML = `<p class="text-center text-red-500">Ocorreu um erro ao carregar o artigo. Verifique o console.</p>`;
         }
+    }
+
+    // Função para lidar com a subscrição da newsletter
+    function handleNewsletterSubscription() {
+        // CORREÇÃO: Seleciona todos os formulários com a classe '.newsletter-form'
+        const forms = document.querySelectorAll('.newsletter-form');
+        if (forms.length === 0) return;
+
+        forms.forEach(form => {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                // CORREÇÃO: Procura os elementos dentro do formulário que foi submetido
+                const input = form.querySelector('.newsletter-input');
+                const formContent = form.querySelector('.newsletter-form-content');
+                const successMessage = form.querySelector('.newsletter-success-message');
+
+                if (input && input.value.trim() !== '' && formContent && successMessage) {
+                    console.log(`Inscrição recebida: ${input.value}`);
+
+                    // Simulação de sucesso
+                    formContent.classList.add('hidden');
+                    successMessage.classList.remove('hidden');
+                }
+            });
+        });
     }

@@ -22,6 +22,19 @@
         </div>
     </header>
     
+    <div class="bg-gray-200 py-3">
+        <div class="container mx-auto px-6">
+            <form class="newsletter-form">
+                <div class="newsletter-form-content flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+                    <label for="top-newsletter" class="font-semibold text-gray-700 text-sm">Receba as novidades:</label>
+                    <input type="text" id="top-newsletter" placeholder="Seu e-mail ou WhatsApp" class="newsletter-input w-full sm:w-auto flex-grow px-3 py-2 rounded-md text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md text-sm transition duration-300 w-full sm:w-auto">Inscrever</button>
+                </div>
+                <p class="newsletter-success-message text-center text-green-600 mt-2 hidden">Obrigado por se inscrever!</p>
+            </form>
+        </div>
+    </div>
+
     <div class="container mx-auto px-6 pt-10">
         <h2 class="text-4xl font-bold text-gray-800 mb-2">Todos os Artigos</h2>
         <p class="text-lg text-gray-600 mb-8">Explore o nosso arquivo completo de análises.</p>
@@ -34,7 +47,7 @@
 
     <main class="container mx-auto px-6 py-12">
         <div id="all-articles-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <!-- O JavaScript irá inserir todos os artigos do articles.json aqui -->
+            <!-- O JavaScript irá inserir todos os artigos aqui -->
         </div>
     </main>
 
@@ -47,7 +60,10 @@
     </div>
     <script src="js/main.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', loadAllArticles);
+        document.addEventListener('DOMContentLoaded', () => {
+            loadAllArticles();
+            handleNewsletterSubscription();
+        });
         document.getElementById('currentYear').textContent = new Date().getFullYear();
         const cookieBanner = document.getElementById('cookie-banner');
         const acceptCookiesButton = document.getElementById('accept-cookies');
