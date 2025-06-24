@@ -1,4 +1,6 @@
-    const articlesDB = './articles.json';
+   // CORREÇÃO: Adicionamos um parâmetro único à URL para evitar problemas de cache.
+    // O `?v=${new Date().getTime()}` força o navegador a sempre descarregar a versão mais recente do ficheiro.
+    const articlesDB = `./articles.json?v=${new Date().getTime()}`;
 
     function createArticleCard(article) {
         const categoryColors = {
@@ -38,7 +40,7 @@
         } catch (error) {
              console.error('Erro ao carregar artigos da página inicial:', error);
              const container = document.getElementById('latest-articles-container');
-             if(container) container.innerHTML = '<p class="text-center text-red-500 col-span-full">Ocorreu um erro ao carregar os artigos.</p>';
+             if(container) container.innerHTML = '<p class="text-center text-red-500 col-span-full">Ocorreu um erro ao carregar os artigos. Verifique o console do navegador (F12) para mais detalhes.</p>';
         }
     }
 
@@ -56,7 +58,7 @@
         } catch (error) {
             console.error('Erro ao carregar a lista de artigos:', error);
             const container = document.getElementById('all-articles-container');
-            if (container) container.innerHTML = '<p class="text-center text-red-500 col-span-3">Ocorreu um erro ao carregar os artigos.</p>';
+            if (container) container.innerHTML = '<p class="text-center text-red-500 col-span-3">Ocorreu um erro ao carregar os artigos. Verifique o console do navegador (F12) para mais detalhes.</p>';
         }
     }
 
@@ -90,6 +92,11 @@
                 <p class="text-gray-500 text-sm mb-6">Publicado em ${article.date} | Categoria: <a href="artigos.html" class="text-indigo-600 hover:underline">${article.category}</a></p>
                 <img src="${article.image}" alt="${article.title}" class="w-full h-auto max-h-96 object-cover rounded-lg mb-8 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ccc/FFFFFF?text=Imagem+Indisponível';">
                 
+                <div class="my-8">
+                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7890018260804293" data-ad-slot="1234567890"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </div>
+                
                 <div class="prose max-w-none text-gray-700 leading-relaxed">
                     ${article.content}
                 </div>
@@ -104,4 +111,3 @@
             articleContent.innerHTML = `<p class="text-center text-red-500">Ocorreu um erro ao carregar o artigo. Verifique o console.</p>`;
         }
     }
-
