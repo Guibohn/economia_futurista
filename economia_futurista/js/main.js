@@ -1,4 +1,6 @@
-   const articlesDB = './articles.json';
+   // CORREÇÃO: Adicionamos um parâmetro único à URL para evitar problemas de cache.
+    // O `?v=${new Date().getTime()}` força o navegador a sempre descarregar a versão mais recente do ficheiro.
+    const articlesDB = `./articles.json?v=${new Date().getTime()}`;
 
     function createArticleCard(article) {
         const categoryColors = {
@@ -112,14 +114,12 @@
 
     // Função para lidar com a subscrição da newsletter
     function handleNewsletterSubscription() {
-        // CORREÇÃO: Seleciona todos os formulários com a classe '.newsletter-form'
         const forms = document.querySelectorAll('.newsletter-form');
         if (forms.length === 0) return;
 
         forms.forEach(form => {
             form.addEventListener('submit', function(event) {
                 event.preventDefault(); 
-                // CORREÇÃO: Procura os elementos dentro do formulário que foi submetido
                 const input = form.querySelector('.newsletter-input');
                 const formContent = form.querySelector('.newsletter-form-content');
                 const successMessage = form.querySelector('.newsletter-success-message');
@@ -127,7 +127,6 @@
                 if (input && input.value.trim() !== '' && formContent && successMessage) {
                     console.log(`Inscrição recebida: ${input.value}`);
 
-                    // Simulação de sucesso
                     formContent.classList.add('hidden');
                     successMessage.classList.remove('hidden');
                 }
